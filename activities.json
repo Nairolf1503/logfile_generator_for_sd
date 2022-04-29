@@ -1,0 +1,131 @@
+{
+    "Angebotsbearbeitung" : 
+    {
+        "name" : "Angebot anlegen",
+        "role" : "Debitorenbearbeiter",
+        "transaction" : "VA21",
+        "department" : "Sales"
+    },
+    "Auftragsbearbeitung" : 
+    {
+        "name" : "Kundenauftrag anzeigen",
+        "role" : "Lagervorarbeiter",
+        "transaction" : "VA03",
+        "department" : "DC Miami"
+    },
+    "Auslieferungsbearbeitung" : 
+    {
+        "name" : "Lieferung anlegen",
+        "role" : "Lagerangestellter",
+        "transaction" : "VL01N",
+        "department" : "DC Miami"
+    },
+    "Belegflussbearbeitung" : 
+    {    
+        "name" : "Kundenauftragsbelegfluss anzeigen",
+        "role" : "Debitorenbearbeiter",
+        "transaction" : "VA03",
+        "department" : "Sales"
+    },
+    "Bestandskontrolle_Debitorenbearbeiter" : 
+    {
+        "name" : "Bestandsübersicht prüfen_DB",
+        "role" : "Debitorenbearbeiter",
+        "transaction" : "MMBE",
+        "department" : "Sales"
+    },
+    "Bestandskontrolle_Lagerangestellter" : 
+    {
+        "name" : "Bestandsübersicht prüfen_LA",
+        "role" : "Lagerangestellter",
+        "transaction" : "MMBE",
+        "department" : "DC Miami"
+    },
+    "Bestandskontrolle_Lagervorarbeiter" : 
+    {
+        "name" : "Bestandsübersicht prüfen_LV",
+        "role" : "Lagervorarbeiter",
+        "transaction" : "MMBE",
+        "department" : "DC Miami"
+    },
+    "Kommissionierung" : 
+    {
+        "name" : "Lieferung ändern",
+        "role" : "Lagervorarbeiter",
+        "transaction" : "VL02N",
+        "department" : "DC Miami"
+    },
+    "Kundenanfragebearbeitung" : 
+    {
+        "name" : "Kundenanfrage anlegen",
+        "role" : "Kundenauftragsbearbeiter",
+        "transaction" : "VA11",
+        "department" : "Sales"
+    },
+    "Kundenauftragsbearbeitung" : 
+    {
+        "name" : "Kundenauftrag anlegen",
+        "role" : "Debitorenbearbeiter",
+        "transaction" : "VA01",
+        "department" : "Sales",
+        "type" : "order"
+    },
+    "Kundendatenänderung" : 
+    {
+        "name" : "Debitor ändern",
+        "role" : "Ansprechpartnerbearbeiter",
+        "transaction" : "VD02",
+        "department" : "Sales"
+    },
+    "Kundenkontaktbearbeitung" : 
+    {
+        "name" : "Ansprechpartner anlegen",
+        "role" : "Ansprechpartnerbearbeiter",
+        "transaction" : "VAP1",
+        "department" : "Sales"
+    },
+    "Kundenstammbearbeitung_Debitorenbearbeiter" : 
+    {
+        "name" : "Debitor anlegen_DB",
+        "role" : "Debitorenbearbeiter",
+        "transaction" : "XD01",
+        "department" : "Sales"
+    },
+    "Kundenstammbearbeitung_Kundenbearbeiter" : 
+    {
+        "name" : "Debitor anlegen_KB",
+        "role" : "Kundenbearbeiter",
+        "transaction" : "XD01",
+        "department" : "Sales"
+    },
+    "Rechnungsbearbeitung" : 
+    {
+        "name" : "Faktura anlegen",
+        "role" : "Kontoführungsspezialist",
+        "transaction" : "VF04",
+        "department" : "Finanzabteilung"
+    },
+    "Rechnungsbelegbearbeitung" : 
+    {
+        "name" : "Faktura und Rechnungsbeleg anzeigen",
+        "role" : "Kontoführungsspezialist",
+        "transaction" : "VF03",
+        "department" : "Finanzabteilung"
+    },
+    "Warenausgangsbearbeitung" : 
+    {
+        "name" : "Auslieferung ändern",
+        "role" : "Lagervorarbeiter",
+        "transaction" : "VL02N",
+        "department" : "DC Miami",
+        "type" : "shipment"
+    },
+    "Zahlungseingangsbearbeitung" : 
+    {
+        "name" : "Zahlungseingang buchen",
+        "role" : "Controller",
+        "transaction" : "F-28",
+        "department" : "Finanzabteilung",
+        "type" : "payment"
+    }
+}

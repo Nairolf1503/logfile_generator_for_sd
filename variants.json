@@ -1,0 +1,34 @@
+{
+    "SD@HS-Harz" : {
+        "order_of_execution" : 
+        [
+        {"activity" : "Kundenstammbearbeitung_Debitorenbearbeiter"}, 
+        {"activity" : "Kundenkontaktbearbeitung"}, 
+        {"activity" : "Kundendatenänderung", "chance_of_repetition" : 20}, 
+        {"activity" : "Kundenanfragebearbeitung"}, 
+        {"activity" : "Angebotsbearbeitung"}, 
+        {"activity" : "Kundenauftragsbearbeitung"}, 
+        {"activity" : "Bestandskontrolle_Debitorenbearbeiter"}, 
+        {"activity" : "Auftragsbearbeitung"}, 
+        {"activity" : "Auslieferungsbearbeitung"}, 
+        {"activity" : "Bestandskontrolle_Lagerangestellter"}, 
+        {"activity" : "Kommissionierung"}, 
+        {"activity" : "Warenausgangsbearbeitung"}, 
+        {"activity" : "Bestandskontrolle_Lagervorarbeiter"}, 
+        {"activity" : "Rechnungsbearbeitung", "chance_of_occurrence" : 50}, 
+        {"activity" : "Rechnungsbelegbearbeitung"}, 
+        {"activity" : "Zahlungseingangsbearbeitung"}, 
+        {"activity" : "Belegflussbearbeitung"}
+        ]
+    },
+    "Werbegeschenk" : {
+        "order_of_execution" : 
+        [
+        {"activity" : "Auslieferungsbearbeitung"},
+        {"activity" : "Bestandskontrolle_Lagerangestellter"},
+        {"activity" : "Kommissionierung"},
+        {"activity" : "Warenausgangsbearbeitung"},
+        {"activity" : "Bestandskontrolle_Lagervorarbeiter"}
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "parameters" : 
+    {
+        "min_order" : 10,
+        "max_order" : 10,
+        "shipment_carriers" : ["DHL", "DPD", "Hermes", "FedEx", "UPS"],
+        "price" : 500,
+        "min_discount" : 0,
+        "max_discount" : 0
+    }
+}
