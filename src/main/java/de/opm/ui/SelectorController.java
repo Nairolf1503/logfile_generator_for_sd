@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import de.opm.template.Template;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.stage.FileChooser.ExtensionFilter;
@@ -37,8 +38,18 @@ public class SelectorController {
         File file = chooseFile("Choose your Variants.json");
         if(file != null){
             Template.loadVariantsFromFile(file);
+
         }
     }
+
+    @FXML 
+    private Label configFilePath;
+
+    @FXML 
+    private Label activitiesFilePath;
+
+    @FXML
+    private Label variantsFilePath;
 
     private File chooseFile(String title){
         FileChooser fileChooser = new FileChooser();
