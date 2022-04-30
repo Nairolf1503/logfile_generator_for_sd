@@ -30,6 +30,7 @@ public class Template {
     public static void loadParamsFromFile(File file){
         Parameters.loadDefaultParams(file);
 
+        if(!file.isFile()){ return; }
         for(ConfigChangeObserver observer : observers){
             String path_to_config = file.getAbsolutePath();
             observer.setConfigPath(path_to_config);
@@ -40,6 +41,7 @@ public class Template {
         Activities.reset();
         Activities.loadActivitiesFromFile(file);
 
+        if(!file.isFile()){ return; }
         for(ConfigChangeObserver observer : observers){
             String path_to_activities = file.getAbsolutePath();
             observer.setActivitiesPath(path_to_activities);
@@ -50,6 +52,7 @@ public class Template {
         Variants.reset();
         Variants.loadVariantsFromDisk(file);
 
+        if(!file.isFile()){ return; }
         for(ConfigChangeObserver observer : observers){
             String path_to_variants = file.getAbsolutePath();
             observer.setVariantsPath(path_to_variants);
