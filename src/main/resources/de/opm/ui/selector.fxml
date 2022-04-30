@@ -10,8 +10,11 @@
       <Label text="Konfigurations-Dateien wählen:" />
       <Button fx:id="primaryButton" text="Generator öffnen" onAction="#switchToGenerator"/>
       <Button fx:id="configFileButton" text="Config-Datei wählen" onAction="#selectConfigFile"/>
+      <Label fx:id="configFilePath" text="No File selected" />
       <Button fx:id="activitiesFileButton" text="Aktivitäten-Datei wählen" onAction="#selectActivitiesFile"/>
+      <Label fx:id="activitiesFilePath" text="No File selected" />
       <Button fx:id="variantsFileButton" text="Varianten-Datei wählen" onAction="#selectVariantsFile"/>
+      <Label fx:id="variantsFilePath" text="No File selected" />
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
