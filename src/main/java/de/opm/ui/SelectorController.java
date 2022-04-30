@@ -76,4 +76,9 @@ public class SelectorController implements ConfigChangeObserver{
         File file = fileChooser.showOpenDialog(new Stage());
         return file;
     }
+
+    public void initialize(){
+        Template.addObserver(this);
+        Template.loadInitialFiles();
+    }
 }
