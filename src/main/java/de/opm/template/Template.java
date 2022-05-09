@@ -18,9 +18,9 @@ public class Template {
     private static List<ConfigChangeObserver> observers = new ArrayList<ConfigChangeObserver>();
 
     public static void loadInitialFiles(){
-        loadParamsFromFile(new File("config.json"));
-        loadActivitiesFromFile(new File("activities.json"));
-        loadVariantsFromFile(new File("variants.json"));
+        loadParamsFromFile(new File("./config.json"));
+        loadActivitiesFromFile(new File("./activities.json"));
+        loadVariantsFromFile(new File("./variants.json"));
     }
 
     public static void addObserver(ConfigChangeObserver observer){
