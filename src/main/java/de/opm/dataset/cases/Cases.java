@@ -20,7 +20,7 @@ public class Cases {
         double time_factor = getTimeFactor();
         Case case_ = new Case(variant, begin_timestamp, time_factor);
 
-        String[] activitiy_keys = variant.getOrderOfExection();
+        String[] activitiy_keys = variant.getActivities();
         for(String activity_key : activitiy_keys){
             Activity activity = Activities.getActivityByKey(activity_key);
             if(activity == null){

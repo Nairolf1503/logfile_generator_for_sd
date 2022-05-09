@@ -49,6 +49,17 @@ public class Variant {
      * @return Array of String containing Activity-Keys. Keys may appear duplicate or be skipped if the chance_of_repetition or chance_of_occurrence
      */
     public String[] getOrderOfExection(){
+        List<String> activity_keys = new ArrayList<String>();
+        order_of_execution.forEach((variant_step) -> {
+            String activity_key = variant_step.getActivityKey();
+            activity_keys.add(activity_key);
+        });
+        
+        String[] act_arr = activity_keys.toArray(new String[activity_keys.size()]);
+        return act_arr;
+    }
+
+    public String[] getActivities(){
         List<String> activities_happend = new ArrayList<>();
         for(int i = 0 ; i < order_of_execution.size() ; i++){
             VariantStep step = order_of_execution.get(i);
