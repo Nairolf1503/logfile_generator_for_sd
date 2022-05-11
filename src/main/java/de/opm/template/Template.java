@@ -9,18 +9,13 @@ import de.opm.template.variants.Variants;
 import de.opm.template.variants.parameters.Parameters;
 
 public class Template {
-    /**
-     * 
-     * @param path_to_activities path on machine leadig to JSON-file containting Activities
-     * @param path_to_variants path on machine leadig to JSON-file containting Variants
-     */
 
     private static List<ConfigChangeObserver> observers = new ArrayList<ConfigChangeObserver>();
 
     public static void loadInitialFiles(){
-        loadParamsFromFile(new File("./config.json"));
-        loadActivitiesFromFile(new File("./activities.json"));
-        loadVariantsFromFile(new File("./variants.json"));
+        loadParamsFromFile(new File("config.json"));
+        loadActivitiesFromFile(new File("activities.json"));
+        loadVariantsFromFile(new File("variants.json"));
     }
 
     public static void addObserver(ConfigChangeObserver observer){
