@@ -21,6 +21,31 @@
         {"activity" : "Belegflussbearbeitung"}
         ]
     },
+    "Standard" : {
+      "order_of_execution" : [
+          {"activity" : ""}
+      ]  
+    },
+    "Angebot ohne Reaktion" : {
+      "order_of_execution" : [
+          {"activity" : ""}
+      ]  
+    },
+    "Initativ-Angebot" : {
+      "order_of_execution" : [
+          {"activity" : ""}
+      ]  
+    },
+    "Auftrag ohne Bezug" : {
+      "order_of_execution" : [
+          {"activity" : ""}
+      ]  
+    },
+    "Auftrag ohne Bezug mit Teilzahlungen" : {
+      "order_of_execution" : [
+          {"activity" : ""}
+      ]  
+    },
     "Werbegeschenk" : {
         "order_of_execution" : 
         [
@@ -30,5 +55,15 @@
         {"activity" : "Warenausgangsbearbeitung"},
         {"activity" : "Bestandskontrolle_Lagervorarbeiter"}
         ]
+    },
+    "Auslieferung ohne Rechnung" : {
+      "order_of_execution" : [
+          {"activity" : ""}
+      ]  
+    },
+    "Angebot mit Rabatt" : {
+      "order_of_execution" : [
+          {"activity" : ""}
+      ]  
     }
 }
