@@ -36,23 +36,59 @@
     },
     "Angebot ohne Reaktion" : {
       "order_of_execution" : [
-          {"activity" : ""}
+          {"activity" : "Kundenstammbearbeitung_Debitorenbearbeiter"},
+          {"activity" : "Kundenkontaktbearbeitung"},
+          {"activity" : "Kundenanfragebearbeitung"},
+          {"activity" : "Angebotsbearbeitung"}
       ]  
     },
     "Initativ-Angebot" : {
       "order_of_execution" : [
-          {"activity" : ""}
+          {"activity" : "Angebotsbearbeitung"},
+          {"activity" : "Kundenauftragsbearbeitung"},
+          {"activity" : "Auslieferungsbearbeitung"},
+          {"activity" : "Bestandskontrolle_Lagerangestellter", "chance_of_occurrence" : 50},
+          {"activity" : "Kommissionierung"},
+          {"activity" : "Warenausgangsbearbeitung"},
+          {"activity" : "Bestandskontrolle_Lagerangestellter", "chance_of_occurrence" : 50},
+          {"activity" : "Rechnungsbearbeitung"},
+          {"activity" : "Zahlungseingangsbearbeitung"}
+
+      ]  
+    },
+    "Angebot ohne Reaktion ohne Bezug" : {
+      "order_of_execution" : [
+        {"activity" : "Kundenstammbearbeitung_Debitorenbearbeiter"},
+        {"activity" : "Kundenkontaktbearbeitung"},
+        {"activity" : "Angebotsbearbeitung"}
       ]  
     },
     "Auftrag ohne Bezug" : {
       "order_of_execution" : [
-          {"activity" : ""}
+        {"activity" : "Kundenauftragsbearbeitung"},
+        {"activity" : "Auslieferungsbearbeitung"},
+        {"activity" : "Bestandskontrolle_Lagerangestellter", "chance_of_occurrence" : 50},
+        {"activity" : "Kommissionierung"},
+        {"activity" : "Warenausgangsbearbeitung"},
+        {"activity" : "Bestandskontrolle_Lagerangestellter", "chance_of_occurrence" : 50},
+        {"activity" : "Rechnungsbearbeitung"},
+        {"activity" : "Zahlungseingangsbearbeitung"}
+
       ]  
     },
     "Auftrag ohne Bezug mit Teilzahlungen" : {
       "order_of_execution" : [
-          {"activity" : ""}
-      ]  
+        {"activity" : "Kundenauftragsbearbeitung"},
+        {"activity" : "Auslieferungsbearbeitung"},
+        {"activity" : "Bestandskontrolle_Lagerangestellter", "chance_of_occurrence" : 50},
+        {"activity" : "Kommissionierung"},
+        {"activity" : "Warenausgangsbearbeitung"},
+        {"activity" : "Bestandskontrolle_Lagerangestellter", "chance_of_occurrence" : 50},
+        {"activity" : "Rechnungsbearbeitung"},
+        {"activity" : "Zahlungseingangsbearbeitung", "chance_of_repetition" : 90}
+      ],
+      "min_discount" : 50,
+      "max_discount" : 50
     },
     "Werbegeschenk" : {
         "order_of_execution" : 
@@ -66,12 +102,28 @@
     },
     "Auslieferung ohne Rechnung" : {
       "order_of_execution" : [
-          {"activity" : ""}
+        {"activity" : "Angebotsbearbeitung"},
+        {"activity" : "Kundenauftragsbearbeitung"},
+        {"activity" : "Auslieferungsbearbeitung"},
+        {"activity" : "Bestandskontrolle_Lagerangestellter", "chance_of_occurrence" : 50},
+        {"activity" : "Kommissionierung"},
+        {"activity" : "Warenausgangsbearbeitung"},
+        {"activity" : "Bestandskontrolle_Lagerangestellter", "chance_of_occurrence" : 50}
       ]  
     },
     "Angebot mit Rabatt" : {
       "order_of_execution" : [
-          {"activity" : ""}
-      ]  
+        {"activity" : "Angebotsbearbeitung"},
+        {"activity" : "Kundenauftragsbearbeitung"},
+        {"activity" : "Auslieferungsbearbeitung"},
+        {"activity" : "Bestandskontrolle_Lagerangestellter", "chance_of_occurrence" : 50},
+        {"activity" : "Kommissionierung"},
+        {"activity" : "Warenausgangsbearbeitung"},
+        {"activity" : "Bestandskontrolle_Lagerangestellter", "chance_of_occurrence" : 50},
+        {"activity" : "Rechnungsbearbeitung"},
+        {"activity" : "Zahlungseingangsbearbeitung"}
+      ],
+      "min_discount" : 10,
+      "max_discount" : 20  
     }
 }
