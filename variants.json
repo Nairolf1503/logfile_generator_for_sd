@@ -23,7 +23,15 @@
     },
     "Standard" : {
       "order_of_execution" : [
-          {"activity" : ""}
+          {"activity" : "Kundenanfragebearbeitung"},
+          {"activity" : "Angebotsbearbeitung"},
+          {"activity" : "Kundenauftragsbearbeitung"},
+          {"activity" : "Auslieferungsbearbeitung"},
+          {"activity" : "Bestandskontrolle_Lagerangestellter", "chance_of_occurrence" : 50},
+          {"activity" : "Kommissionierung"},
+          {"activity" : "Warenausgangsbearbeitung"},
+          {"activity" : "Bestandskontrolle_Lagerangestellter", "chance_of_occurrence" : 50},
+          {"activity" : "Rechnungsbearbeitung"}
       ]  
     },
     "Angebot ohne Reaktion" : {
