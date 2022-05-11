@@ -16,8 +16,8 @@ public class VariantQuantitiy extends HBox{
         label.getItems().addAll(Variants.getVariantByKey(variant).getOrderOfExection());
         label.setOnAction((event) -> label.getSelectionModel().selectFirst());
         input.setText("0");
-        label.setMinWidth(200);
-        label.setMaxWidth(200);
+        label.setMinWidth(400);
+        label.setMaxWidth(400);
         this.setAlignment(Pos.CENTER);
         this.getChildren().addAll(label, input);
     }
