@@ -6,7 +6,7 @@ We acknowledge and are grateful to these developers for their contributions
 to open source.
 
 ### [JSON-java](https://github.com/stleary/JSON-java)
-by [Sean Leary](https://github.com/stleary) is licensed under [The JSON License]([Nairolf1503/JSON-java](https://github.com/stleary/JSON-java/blob/master/LICENSE)
+by [Sean Leary](https://github.com/stleary) is licensed under [The JSON License](https://github.com/stleary/JSON-java/blob/master/LICENSE)
 
 ### [jfx13](https://github.com/openjdk/jfx13)
 by [OpenJDK](https://github.com/openjdk) is licensed under [GPLv2+CE](https://openjdk.java.net/legal/gplv2+ce.html)
